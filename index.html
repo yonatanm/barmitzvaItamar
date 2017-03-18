@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>בר מצווה לאיתמר</title>
+  <link rel="stylesheet" type="text/css" href="static/style.css">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">-->
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'/>
+
+
+</head>
+<body dir="rtl">
+
+
+<div class="flip-container" id="xyz" onclick="flip()">
+  <div class="flipper">
+    <div class="front" style="background: url(static/alone.jpg) 0 0 no-repeat;">
+    </div>
+    <div class="back" style="background: url(static/together.jpg) 0 0 no-repeat;">
+    </div>
+  </div>
+</div>
+
+<p></p>
+<h1>בר מצווה לאיתמר</h1>
+<h3>ואוו, מתי?</h3>
+<p>ב -1 לאפריל! וזוהי לא מתיחה! (או שאולי כן...) בשעה 11:30</p>
+
+<h3>מעולה, איפה?</h3>
+<P>איי שם ביעא הפיות שליד בית אורן</p>
+<a href="https://waze.to/li/hsvbfhw8kd"><img src="static/waze.png" height="200px" width="200px"></a>
+
+<h3>טוב, מה להביא?</h3>
+<P>בגדים נוחים ובגדי החלפה למי שמתכוון לשכשך בבריכות</p>
+
+<h3>נחמד, ומה עושים?</h3>
+<P>מתכנסים</p>
+<P>טיול ברכס הכרמל</P>
+<P>ארוחה</P>
+<P>טקס, ברכות ובילוי ביער</P>
+
+<H1>מחכים לכולכם,</H1>
+<H1>הממנים</H1>
+
+<script>
+  function flip() {
+    console.log("fliiip");
+    document.querySelector("#xyz").classList.toggle("flip")
+  }
+</script>
+
+</body>
+</html>
