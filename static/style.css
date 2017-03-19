@@ -24,6 +24,7 @@ img.center {
 ul {
   list-style: none;
   padding-right: 0px;
+  margin-bottom: 300px;
 }
 .top, .bottom {
   text-align: center;
@@ -74,6 +75,7 @@ h3 {
 .flip-container.flip .flipper {
   transform: rotateY(180deg);
 }
+
 
 .flip-container, .front, .back {
   width: 1200px;
