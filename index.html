@@ -15,11 +15,13 @@
 <body dir="rtl">
 
 
-<div class="flip-container" id="xyz" onclick="flip()">
+<div class="flip-container" id="xyz" >
   <div class="flipper">
-    <div class="front" src="static/alone.jpg">
+    <div class="front" src="static/alone.jpg" >
+      <img src="static/redbutton.png" class="redbutton" onclick="flip()">
     </div>
     <div class="back" src="static/together.jpg">
+      <img src="static/redbutton.png" class="redbutton" onclick="flip()">
     </div>
   </div>
 </div>
@@ -64,11 +66,16 @@
 </br>
 </br>
 </br>
+</br>
 <p/>
 <p/>
 <h1 class="bottom" style="margin-top: 10px"> מחכים לכולכם,</h1>
 <h1 class="bottom" style="margin-top: 10px">הממנים</h1>
+<h3>
+  והכי חשוב, לא ללחוץ על ה
+  <img src="static/redbutton.png" class="redbutton"">
 
+</h3>
 
 <script>
   function flip() {
