@@ -32,10 +32,13 @@ h3 {
 
 .left {
   float:left;
-  width:46%;
+  /*width:46%;*/
+  width:40%;
   position:relative;
-  left:52%;
+  left:60%;
+  /*left:52%;*/
   overflow:hidden;
+  border: 1px;
 }
 
 .right {
@@ -44,6 +47,7 @@ h3 {
   position:relative;
   left:56%;
   overflow:hidden;
+  border: 1px;
 }
 /*
 *****
