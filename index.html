@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <title>בר מצווה לאיתמר</title>
   <link rel="stylesheet" type="text/css" href="static/style.css">
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">-->
-  <!--<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'/>-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <!--<meta http-equiv="X-UA-Compatible" content="IE=edge"/>-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />-->
+  <!--<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">-->
+  <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />-->
 
 
 </head>
@@ -14,46 +17,61 @@
 
 <div class="flip-container" id="xyz" onclick="flip()">
   <div class="flipper">
-    <div class="front" style="background: url(static/alone.jpg) 0 0 no-repeat;">
+    <div class="front" src="static/alone.jpg">
     </div>
-    <div class="back" style="background: url(static/together.jpg) 0 0 no-repeat;">
+    <div class="back" src="static/together.jpg">
     </div>
   </div>
+</div>
 </div>
 
 <h1 class="top">בר מצווה לאיתמר</h1>
 
-<div id="container2">
-  <div id="container1">
+<div class="columnsContainer">
+  <div class="leftColumn">
+    <h3>נחמד, ומה עושים?</h3>
+    <ul>
+      <li>
+        מתכנסים
+      </li>
+      <li>
+        טיול ברכס הכרמל
+      </li>
+      <li>
+        ארוחה
+      </li>
+      <li>
+        טקס, ברכות ובילוי ביער
+      </li>
 
-    <div class="left">
-      <h3>נחמד, ומה עושים?</h3>
-      <P>מתכנסים</p>
-      <P>טיול ברכס הכרמל</P>
-      <P>ארוחה</P>
-      <P>טקס, ברכות ובילוי ביער</P>
-    </div>
-    <div class="right">
-      <h3>ואוו, מתי?</h3>
-      <p>ב -1 לאפריל! וזוהי לא מתיחה! (או שאולי כן...) בשעה 11:30</p>
+    </ul>
+  </div>
+  <div class="rightColumn">
+    <h3>ואוו, מתי?</h3>
+    <p>ב -1 לאפריל! וזוהי לא מתיחה! (או שאולי כן...) בשעה 11:30</p>
 
-      <h3>מעולה, איפה?</h3>
-      <P>איי שם ביער הפיות שליד בית אורן<a href="https://waze.to/li/hsvbfhw8kd"><img src="static/waze.png" height="30px"
-                                                                                     width="30px"></a></P>
+    <h3>מעולה, איפה?</h3>
+    <P>איי שם ביער הפיות שליד בית אורן<a href="https://waze.to/li/hsvbfhw8kd"><img src="static/waze.png" height="30px"
+                                                                                   width="30px"></a></P>
 
-      <h3>טוב, מה להביא?</h3>
-      <P>בגדים נוחים ובגדי החלפה למי שמתכוון לשכשך בבריכות</p>
-    </div>
-
+    <h3>טוב, מה להביא?</h3>
+    <P>בגדים נוחים ובגדי החלפה למי שמתכוון לשכשך בבריכות</p>
   </div>
 </div>
-
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<p/>
+<p/>
 <h1 class="bottom" style="margin-top: 10px"> מחכים לכולכם,</h1>
 <h1 class="bottom" style="margin-top: 10px">הממנים</h1>
 
+
 <script>
   function flip() {
-    console.log("fliiip");
     document.querySelector("#xyz").classList.toggle("flip")
   }
 </script>

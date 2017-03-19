@@ -1,64 +1,70 @@
-p {
-  font-size: 2em; /* 14px/16=0.875em */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
-h1 {
-  font-size: 5em; /* 14px/16=0.875em */
-  margin-bottom: 10px;
+body { margin: 0; }
+
+img.center {
+  display: block;
+  margin: 0 auto;
 }
 
-h3 {
-  font-size: 3em; /* 14px/16=0.875em */
-  margin-bottom: 15px;
 
+.columnsContainer { position: relative; margin: .5em; }
+
+.leftColumn, .rightColumn {  padding: 1.25em; }
+
+.leftColumn { margin-bottom: .5em; }
+
+/* MEDIA QUERIES */
+.leftColumn { margin-right: 40.5em; width: 400px}
+
+.rightColumn { position: absolute; top: 0; right: 0; width: 32.75em; }
+
+ul {
+  list-style: none;
+  padding-right: 0px;
 }
-
 .top, .bottom {
   text-align: center;
 }
 
-#container2 {
-  clear:left;
-  float:left;
-  width:100%;
-  overflow:hidden;
-}
-#container1 {
-  float:left;
-  width:100%;
-  position:relative;
-  right:50%;
+p{
+  font-size: 2em;
 }
 
-.left {
-  float:left;
-  width:46%;
-  position:relative;
-  left:52%;
-  overflow:hidden;
-  border: 1px;
+li{
+  font-size: 2em;
+  padding-left: 0;
+  padding-bottom: 5px;
+
 }
 
-.right {
-  float:left;
-  width:46%;
-  position:relative;
-  left:56%;
-  overflow:hidden;
-  border: 1px;
+h1 {
+  font-size: 5em;
+  margin-bottom: 10px;
+  width: 1200px;
 }
-/*
-*****
-*****
-*****
-*****
-*****
- */
+
+h3 {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
 
 /* entire container, keeps perspective */
+
+.front {
+  background: url(alone.jpg) 0 0 no-repeat;
+}
+
+.back {
+  background: url(together.jpg) 0 0 no-repeat;
+}
+
 .flip-container {
   perspective: 1200px;
 }
+
 /* flip the pane when hovered */
 /*.flip-container:hover .flipper, .flip-container.hover .flipper {*/
 .flip-container.flip .flipper {
@@ -97,4 +103,13 @@ h3 {
 /* back, initially hidden pane */
 .back {
   transform: rotateY(180deg);
+}
+
+.watermark {
+  /* the actual 'watermark' */
+  position: absolute;
+  top: 0; /* or whatever */
+  left: 0; /* or whatever, position according to taste */
+  opacity: 0.5; /* Firefox, Chrome, Safari, Opera, IE >= 9 (preview) */
+  filter:alpha(opacity=50); /* for <= IE 8 */
 }
