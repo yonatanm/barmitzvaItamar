@@ -10,9 +10,9 @@ img.center {
 }
 
 
-.columnsContainer { position: relative; margin: .5em; }
+.columnsContainer, footer { position: relative; margin: .5em; }
 
-.leftColumn, .rightColumn {  padding: 1.25em; }
+.leftColumn, .rightColumn, footer {  padding: 1.25em;}
 
 .leftColumn { margin-bottom: .5em; }
 
