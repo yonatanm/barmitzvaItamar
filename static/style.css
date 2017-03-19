@@ -1,3 +1,43 @@
+.top, .bottom {
+  text-align: center;
+}
+
+#container2 {
+  clear:left;
+  float:left;
+  width:100%;
+  overflow:hidden;
+}
+#container1 {
+  float:left;
+  width:100%;
+  position:relative;
+  right:50%;
+}
+
+.left {
+  float:left;
+  width:46%;
+  position:relative;
+  left:52%;
+  overflow:hidden;
+}
+
+.right {
+  float:left;
+  width:46%;
+  position:relative;
+  left:56%;
+  overflow:hidden;
+}
+/*
+*****
+*****
+*****
+*****
+*****
+ */
+
 /* entire container, keeps perspective */
 .flip-container {
   perspective: 1200px;
