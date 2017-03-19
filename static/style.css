@@ -32,11 +32,9 @@ h3 {
 
 .left {
   float:left;
-  /*width:46%;*/
-  width:40%;
+  width:46%;
   position:relative;
-  left:60%;
-  /*left:52%;*/
+  left:52%;
   overflow:hidden;
   border: 1px;
 }
